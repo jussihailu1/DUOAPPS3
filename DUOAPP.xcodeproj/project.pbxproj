@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D646F5225430D2B00E8E135 /* DUOAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */; };
+		8D646F5625430D2D00E8E135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D646F5525430D2D00E8E135 /* Assets.xcassets */; };
+		8D646F5925430D2D00E8E135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D646F5825430D2D00E8E135 /* Preview Assets.xcassets */; };
+		8D646F6425430D2D00E8E135 /* DUOAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F6325430D2D00E8E135 /* DUOAPPTests.swift */; };
+		8D646F6F25430D2D00E8E135 /* DUOAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F6E25430D2D00E8E135 /* DUOAPPUITests.swift */; };
+		8D646F812543113100E8E135 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F802543113100E8E135 /* Item.swift */; };
+		8D646F892543113F00E8E135 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F882543113F00E8E135 /* Closet.swift */; };
+		8D646F8E2543115400E8E135 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F8D2543115400E8E135 /* Tag.swift */; };
+		8D646F932543116300E8E135 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F922543116300E8E135 /* Category.swift */; };
+		8D646F9B2543413D00E8E135 /* ClosetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F9A2543413D00E8E135 /* ClosetManager.swift */; };
+		8D646FA12543691700E8E135 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FA02543691700E8E135 /* HomeView.swift */; };
+		8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FAB25436A6C00E8E135 /* ClosetView.swift */; };
+		8D646FB825437A0800E8E135 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FB725437A0800E8E135 /* AddItemView.swift */; };
+		8D646FC325437E3400E8E135 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FC225437E3400E8E135 /* ItemView.swift */; };
+		8DB92913254AB916005D4527 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB92912254AB916005D4527 /* AppData.swift */; };
+		8DD073FC25443767003C2ABE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD073FB25443767003C2ABE /* FilterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D646F6025430D2D00E8E135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D646F4625430D2B00E8E135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D646F4D25430D2B00E8E135;
+			remoteInfo = DUOAPP;
+		};
+		8D646F6B25430D2D00E8E135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D646F4625430D2B00E8E135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D646F4D25430D2B00E8E135;
+			remoteInfo = DUOAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D646F4E25430D2B00E8E135 /* DUOAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUOAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUOAPPApp.swift; sourceTree = "<group>"; };
+		8D646F5525430D2D00E8E135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D646F5825430D2D00E8E135 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D646F5A25430D2D00E8E135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D646F5F25430D2D00E8E135 /* DUOAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUOAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D646F6325430D2D00E8E135 /* DUOAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUOAPPTests.swift; sourceTree = "<group>"; };
+		8D646F6525430D2D00E8E135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D646F6A25430D2D00E8E135 /* DUOAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUOAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D646F6E25430D2D00E8E135 /* DUOAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUOAPPUITests.swift; sourceTree = "<group>"; };
+		8D646F7025430D2D00E8E135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D646F802543113100E8E135 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8D646F882543113F00E8E135 /* Closet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closet.swift; sourceTree = "<group>"; };
+		8D646F8D2543115400E8E135 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		8D646F922543116300E8E135 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8D646F9A2543413D00E8E135 /* ClosetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetManager.swift; sourceTree = "<group>"; };
+		8D646FA02543691700E8E135 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8D646FAB25436A6C00E8E135 /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
+		8D646FB725437A0800E8E135 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		8D646FC225437E3400E8E135 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		8DB92912254AB916005D4527 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		8DD073FB25443767003C2ABE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D646F4B25430D2B00E8E135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F5C25430D2D00E8E135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F6725430D2D00E8E135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D646F4525430D2B00E8E135 = {
+			isa = PBXGroup;
+			children = (
+				8D646F5025430D2B00E8E135 /* DUOAPP */,
+				8D646F6225430D2D00E8E135 /* DUOAPPTests */,
+				8D646F6D25430D2D00E8E135 /* DUOAPPUITests */,
+				8D646F4F25430D2B00E8E135 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D646F4F25430D2B00E8E135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D646F4E25430D2B00E8E135 /* DUOAPP.app */,
+				8D646F5F25430D2D00E8E135 /* DUOAPPTests.xctest */,
+				8D646F6A25430D2D00E8E135 /* DUOAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D646F5025430D2B00E8E135 /* DUOAPP */ = {
+			isa = PBXGroup;
+			children = (
+				8DB928FB254AB6E6005D4527 /* Resources */,
+				8D646FA02543691700E8E135 /* HomeView.swift */,
+				8D646FAB25436A6C00E8E135 /* ClosetView.swift */,
+				8D646FB725437A0800E8E135 /* AddItemView.swift */,
+				8D646FC225437E3400E8E135 /* ItemView.swift */,
+				8DD073FB25443767003C2ABE /* FilterView.swift */,
+				8D646F7F254310FA00E8E135 /* Models */,
+				8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */,
+				8D646F5525430D2D00E8E135 /* Assets.xcassets */,
+				8D646F5A25430D2D00E8E135 /* Info.plist */,
+				8D646F5725430D2D00E8E135 /* Preview Content */,
+			);
+			path = DUOAPP;
+			sourceTree = "<group>";
+		};
+		8D646F5725430D2D00E8E135 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8D646F5825430D2D00E8E135 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D646F6225430D2D00E8E135 /* DUOAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D646F6325430D2D00E8E135 /* DUOAPPTests.swift */,
+				8D646F6525430D2D00E8E135 /* Info.plist */,
+			);
+			path = DUOAPPTests;
+			sourceTree = "<group>";
+		};
+		8D646F6D25430D2D00E8E135 /* DUOAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D646F6E25430D2D00E8E135 /* DUOAPPUITests.swift */,
+				8D646F7025430D2D00E8E135 /* Info.plist */,
+			);
+			path = DUOAPPUITests;
+			sourceTree = "<group>";
+		};
+		8D646F7F254310FA00E8E135 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D646F922543116300E8E135 /* Category.swift */,
+				8D646F882543113F00E8E135 /* Closet.swift */,
+				8D646F802543113100E8E135 /* Item.swift */,
+				8D646F8D2543115400E8E135 /* Tag.swift */,
+				8D646F9A2543413D00E8E135 /* ClosetManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DB928FB254AB6E6005D4527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DB92912254AB916005D4527 /* AppData.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D646F4D25430D2B00E8E135 /* DUOAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D646F7325430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPP" */;
+			buildPhases = (
+				8D646F4A25430D2B00E8E135 /* Sources */,
+				8D646F4B25430D2B00E8E135 /* Frameworks */,
+				8D646F4C25430D2B00E8E135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DUOAPP;
+			productName = DUOAPP;
+			productReference = 8D646F4E25430D2B00E8E135 /* DUOAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D646F5E25430D2D00E8E135 /* DUOAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D646F7625430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPPTests" */;
+			buildPhases = (
+				8D646F5B25430D2D00E8E135 /* Sources */,
+				8D646F5C25430D2D00E8E135 /* Frameworks */,
+				8D646F5D25430D2D00E8E135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D646F6125430D2D00E8E135 /* PBXTargetDependency */,
+			);
+			name = DUOAPPTests;
+			productName = DUOAPPTests;
+			productReference = 8D646F5F25430D2D00E8E135 /* DUOAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D646F6925430D2D00E8E135 /* DUOAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D646F7925430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPPUITests" */;
+			buildPhases = (
+				8D646F6625430D2D00E8E135 /* Sources */,
+				8D646F6725430D2D00E8E135 /* Frameworks */,
+				8D646F6825430D2D00E8E135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D646F6C25430D2D00E8E135 /* PBXTargetDependency */,
+			);
+			name = DUOAPPUITests;
+			productName = DUOAPPUITests;
+			productReference = 8D646F6A25430D2D00E8E135 /* DUOAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D646F4625430D2B00E8E135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8D646F4D25430D2B00E8E135 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					8D646F5E25430D2D00E8E135 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 8D646F4D25430D2B00E8E135;
+					};
+					8D646F6925430D2D00E8E135 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 8D646F4D25430D2B00E8E135;
+					};
+				};
+			};
+			buildConfigurationList = 8D646F4925430D2B00E8E135 /* Build configuration list for PBXProject "DUOAPP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D646F4525430D2B00E8E135;
+			productRefGroup = 8D646F4F25430D2B00E8E135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D646F4D25430D2B00E8E135 /* DUOAPP */,
+				8D646F5E25430D2D00E8E135 /* DUOAPPTests */,
+				8D646F6925430D2D00E8E135 /* DUOAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D646F4C25430D2B00E8E135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D646F5925430D2D00E8E135 /* Preview Assets.xcassets in Resources */,
+				8D646F5625430D2D00E8E135 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F5D25430D2D00E8E135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F6825430D2D00E8E135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D646F4A25430D2B00E8E135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D646F892543113F00E8E135 /* Closet.swift in Sources */,
+				8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */,
+				8D646F8E2543115400E8E135 /* Tag.swift in Sources */,
+				8DD073FC25443767003C2ABE /* FilterView.swift in Sources */,
+				8D646F812543113100E8E135 /* Item.swift in Sources */,
+				8D646FC325437E3400E8E135 /* ItemView.swift in Sources */,
+				8D646F9B2543413D00E8E135 /* ClosetManager.swift in Sources */,
+				8D646FA12543691700E8E135 /* HomeView.swift in Sources */,
+				8DB92913254AB916005D4527 /* AppData.swift in Sources */,
+				8D646F5225430D2B00E8E135 /* DUOAPPApp.swift in Sources */,
+				8D646F932543116300E8E135 /* Category.swift in Sources */,
+				8D646FB825437A0800E8E135 /* AddItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F5B25430D2D00E8E135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D646F6425430D2D00E8E135 /* DUOAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D646F6625430D2D00E8E135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D646F6F25430D2D00E8E135 /* DUOAPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D646F6125430D2D00E8E135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D646F4D25430D2B00E8E135 /* DUOAPP */;
+			targetProxy = 8D646F6025430D2D00E8E135 /* PBXContainerItemProxy */;
+		};
+		8D646F6C25430D2D00E8E135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D646F4D25430D2B00E8E135 /* DUOAPP */;
+			targetProxy = 8D646F6B25430D2D00E8E135 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8D646F7125430D2D00E8E135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D646F7225430D2D00E8E135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D646F7425430D2D00E8E135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DUOAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D646F7525430D2D00E8E135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DUOAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D646F7725430D2D00E8E135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				INFOPLIST_FILE = DUOAPPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DUOAPP.app/DUOAPP";
+			};
+			name = Debug;
+		};
+		8D646F7825430D2D00E8E135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				INFOPLIST_FILE = DUOAPPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DUOAPP.app/DUOAPP";
+			};
+			name = Release;
+		};
+		8D646F7A25430D2D00E8E135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				INFOPLIST_FILE = DUOAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DUOAPP;
+			};
+			name = Debug;
+		};
+		8D646F7B25430D2D00E8E135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VHFFH944D;
+				INFOPLIST_FILE = DUOAPPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DUOAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D646F4925430D2B00E8E135 /* Build configuration list for PBXProject "DUOAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D646F7125430D2D00E8E135 /* Debug */,
+				8D646F7225430D2D00E8E135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D646F7325430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D646F7425430D2D00E8E135 /* Debug */,
+				8D646F7525430D2D00E8E135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D646F7625430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D646F7725430D2D00E8E135 /* Debug */,
+				8D646F7825430D2D00E8E135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D646F7925430D2D00E8E135 /* Build configuration list for PBXNativeTarget "DUOAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D646F7A25430D2D00E8E135 /* Debug */,
+				8D646F7B25430D2D00E8E135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D646F4625430D2B00E8E135 /* Project object */;
+}
