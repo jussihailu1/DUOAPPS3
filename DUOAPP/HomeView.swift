@@ -30,7 +30,7 @@ struct HomeView: View {
                             .font(.headline)
                     })
                 Spacer()
-            }.navigationBarTitle("Home")
+            }.navigationBarTitle("APPNAME")
         }
     }
 }
