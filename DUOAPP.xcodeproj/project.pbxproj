@@ -21,6 +21,8 @@
 		8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FAB25436A6C00E8E135 /* ClosetView.swift */; };
 		8D646FB825437A0800E8E135 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FB725437A0800E8E135 /* AddItemView.swift */; };
 		8D646FC325437E3400E8E135 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FC225437E3400E8E135 /* ItemView.swift */; };
+		8DAA3C52255499A60081F596 /* ItemInGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA3C51255499A60081F596 /* ItemInGridView.swift */; };
+		8DAA3C5725549B2E0081F596 /* OutfitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA3C5625549B2E0081F596 /* OutfitsView.swift */; };
 		8DB92913254AB916005D4527 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB92912254AB916005D4527 /* AppData.swift */; };
 		8DD073FC25443767003C2ABE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD073FB25443767003C2ABE /* FilterView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		8D646FAB25436A6C00E8E135 /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
 		8D646FB725437A0800E8E135 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		8D646FC225437E3400E8E135 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		8DAA3C51255499A60081F596 /* ItemInGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInGridView.swift; sourceTree = "<group>"; };
+		8DAA3C5625549B2E0081F596 /* OutfitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsView.swift; sourceTree = "<group>"; };
 		8DB92912254AB916005D4527 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		8DD073FB25443767003C2ABE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,8 +123,10 @@
 				8D646FA02543691700E8E135 /* HomeView.swift */,
 				8D646FAB25436A6C00E8E135 /* ClosetView.swift */,
 				8D646FB725437A0800E8E135 /* AddItemView.swift */,
+				8DAA3C5625549B2E0081F596 /* OutfitsView.swift */,
 				8D646FC225437E3400E8E135 /* ItemView.swift */,
 				8DD073FB25443767003C2ABE /* FilterView.swift */,
+				8DAA3C51255499A60081F596 /* ItemInGridView.swift */,
 				8D646F7F254310FA00E8E135 /* Models */,
 				8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */,
 				8D646F5525430D2D00E8E135 /* Assets.xcassets */,
@@ -308,9 +314,11 @@
 				8D646F892543113F00E8E135 /* Closet.swift in Sources */,
 				8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */,
 				8D646F8E2543115400E8E135 /* Tag.swift in Sources */,
+				8DAA3C52255499A60081F596 /* ItemInGridView.swift in Sources */,
 				8DD073FC25443767003C2ABE /* FilterView.swift in Sources */,
 				8D646F812543113100E8E135 /* Item.swift in Sources */,
 				8D646FC325437E3400E8E135 /* ItemView.swift in Sources */,
+				8DAA3C5725549B2E0081F596 /* OutfitsView.swift in Sources */,
 				8D646F9B2543413D00E8E135 /* ClosetManager.swift in Sources */,
 				8D646FA12543691700E8E135 /* HomeView.swift in Sources */,
 				8DB92913254AB916005D4527 /* AppData.swift in Sources */,
@@ -476,7 +484,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UWTAA8VL2P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DUOAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -500,7 +508,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UWTAA8VL2P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DUOAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

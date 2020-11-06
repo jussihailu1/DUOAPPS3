@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Tag  {
+struct Tag  {
     var name: String
 //    var appliances: Int ??? Om bij te houden hoevaak deze tag gebruikt wordt?
     

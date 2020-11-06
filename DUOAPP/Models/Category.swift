@@ -7,12 +7,17 @@
 
 import Foundation
 
-class Category: Identifiable {
+struct Category: Identifiable, Equatable {
     var id: Int
     var name: String
     
     init(id: Int, name: String) {
         self.id = id
         self.name = name
+    }
+    
+    init() {
+        self.id = 0
+        self.name = ""
     }
 }

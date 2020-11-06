@@ -7,17 +7,19 @@
 
 import Foundation
 
-class Item {
+struct Item {
     
+    var id: Int
     var name: String
     var category: Category
     var tags: [Tag]
     var image: String
     
-    init(name: String, category: Category) {
+    init(id: Int, name: String, category: Category) {
+        self.id = id
         self.name = name
         self.category = category
         self.tags = []
-        self.image = ""
+        self.image = name + ".png"
     }
 }

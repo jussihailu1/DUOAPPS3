@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Closet  {
+struct Closet  {
     var items: [Item]
     
     init() {

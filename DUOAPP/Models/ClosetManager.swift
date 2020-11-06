@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ClosetManager  {
+struct ClosetManager  {
     
     var closet: Closet
     

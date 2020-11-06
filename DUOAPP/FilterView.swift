@@ -9,15 +9,32 @@ import SwiftUI
 
 struct FilterView: View {
     
-    var chosenCategory: Category;
+    let chosenCategory: Category
+    
+    var filteredItems: [Item] {
+        return AppData.items.filter {$0.category == chosenCategory}
+    }
     
     var body: some View {
-        Text("Hello, This is your selected category: \n \n" + chosenCategory.name)
+        
+        ScrollView{
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 20){
+                ForEach(filteredItems, id: \.id){ item in
+                    NavigationLink(
+                        destination: ItemView(item: item),
+                        label: {
+                            ItemInGridView(item: item)
+                        })
+                }
+            }.padding()
+        }.navigationBarTitle(chosenCategory.name)
     }
 }
 
 struct FilterView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterView(chosenCategory: AppData.categories[0])
+        Group {
+            FilterView(chosenCategory: AppData.categories[2])
+        }
     }
 }

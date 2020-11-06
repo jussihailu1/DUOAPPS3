@@ -16,21 +16,23 @@ struct HomeView: View {
                     destination: ClosetView(),
                     label: {
                         Text("Closet")
-                            .padding(.horizontal, 75).padding(.vertical, 50).background(Color.gray)
-                            .cornerRadius(15).foregroundColor(Color.white)
-                            .font(.headline)
-                    })
-                Spacer()
-                NavigationLink(
-                    destination: AddItemView(),
-                    label: {
-                        Text("Add new item")
                             .padding(50).background(Color.gray)
                             .cornerRadius(15).foregroundColor(Color.white)
                             .font(.headline)
-                    })
+                    }
+                )
+                Spacer()   
+                NavigationLink(
+                    destination: OutfitsView(),
+                    label: {
+                        Text("Outfits")
+                            .padding(50).background(Color.gray)
+                            .cornerRadius(15).foregroundColor(Color.white)
+                            .font(.headline)
+                    }
+                )
                 Spacer()
-            }.navigationBarTitle("APPNAME")
+            }.navigationBarTitle("[APPNAME]")
         }
     }
 }
@@ -40,3 +42,7 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+// hardware
+// webservice -> API (maybe weer)
+// OO dingen bewijzen met klassendiagram enzo
