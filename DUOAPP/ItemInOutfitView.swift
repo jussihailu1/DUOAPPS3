@@ -11,26 +11,35 @@ struct ItemInOutfitView: View {
     
     let item: Item
     let cardSize: CGSize
-    let opacity: Double
+    let itemIndex: Int
+    var activeItemIndex: Int = 0
+    var opacity: Double { return itemIndex == activeItemIndex ? 1 : 0.2}
+    @State var isActive: Bool = false
     
     init(item: Item){
         self.item = item
-        self.cardSize = CGSize(width: 100, height: 100)
-        self.opacity = 1
+        
+        /// Below values don't matter
+        self.cardSize = CGSize(width: 280, height: 280)
+        self.itemIndex = 0
     }
     
-    init(item: Item, cardSize: CGSize, opacity: Double){
+    init(item: Item, cardSize: CGSize, itemIndex: Int, activeItemIndex: Int){
         self.item = item
         self.cardSize = cardSize
-        self.opacity = opacity
+        self.itemIndex = itemIndex
+        self.activeItemIndex = activeItemIndex
     }
     
     var body: some View {
-        Image(item.name)
-            .resizable()
-            .scaledToFit()
-            .frame(width: self.cardSize.width, height: self.cardSize.height)
-            .opacity(self.opacity)
+        VStack(spacing: 5){
+            Image(item.name)
+                .resizable()
+                .scaledToFit()
+                .frame(width: self.cardSize.width, height: self.cardSize.height)
+                .opacity(self.opacity)
+            Text(self.item.name)
+        }
     }
 }
 

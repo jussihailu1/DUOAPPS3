@@ -26,11 +26,11 @@ struct CarouselView: View{
     
     @State var dragged: CGSize = CGSize.zero
     @State var accumulated: CGSize = CGSize.zero
-    @State var activeItemIndex: CGFloat = 0
-    let minimumDragAmount: CGFloat = 50
+    @State var activeItemIndex: Int = 0
     let widthOfHiddenCards: CGFloat = 90
     let cardHeight: CGFloat = 150
     let spacing: CGFloat = 30
+    var minimumDragAmount: CGFloat {return cardWidth / 2}
     var padding: CGFloat { return widthOfHiddenCards + spacing }
     var numberOfCarouselItems: CGFloat {return CGFloat(items.count)}
     var startOffsetX: CGFloat {return (carouselWidth - UIScreen.main.bounds.width) / 2}
@@ -41,22 +41,13 @@ struct CarouselView: View{
         return (cardWidth * numberOfCarouselItems) + (spacing * (numberOfCarouselItems - 1))
     }
     
-    @State var itemOpacity: Double = 1
-//    func setItemOpacity (id: CGFloat) -> Void{
-//        let index: Int = items.firstIndex(where: {CGFloat($0.id) == id})!
-//        if CGFloat(index).isEqual(to: activeItemIndex){
-//            self.itemOpacity = 1
-//        }else{
-//            self.itemOpacity = 0.5
-//        }
-//    }
-    
-//    TODO: OPACITY SHIT FIKSEN
-    
     var body: some View{
         HStack(spacing: self.spacing) {
             ForEach(self.items, id: \.id){ item in
-                ItemInOutfitView(item: item, cardSize: CGSize(width: self.cardWidth, height: self.cardHeight), opacity: self.itemOpacity)
+                ItemInOutfitView(item: item,
+                                 cardSize: CGSize(width: self.cardWidth, height: self.cardHeight),
+                                 itemIndex: Int(items.firstIndex(where: { $0.id == item.id })!),
+                                 activeItemIndex: self.activeItemIndex)
                     .offset(x: self.dragged.width)
                     .gesture(
                         DragGesture()
@@ -65,20 +56,20 @@ struct CarouselView: View{
                             }
                             .onEnded{ value in
                                 withAnimation{
-                                    if value.translation.width < -self.minimumDragAmount {
-                                        self.activeItemIndex = self.activeItemIndex - 1
-                                        self.dragged.width = (self.activeItemIndex * (cardWidth + spacing))
+                                    if value.translation.width < -self.minimumDragAmount &&
+                                        self.activeItemIndex + 1 < Int(numberOfCarouselItems) {  /// Swiping left
+                                        self.activeItemIndex = self.activeItemIndex + 1
+                                        self.dragged.width = -(CGFloat(self.activeItemIndex) * (cardWidth + spacing))
                                         self.accumulated = self.dragged
-//                                        self.setItemOpacity(id: self.activeItemIndex - 1)
                                     }else{
                                         self.dragged = self.accumulated
                                         
                                     }
-                                    if value.translation.width > self.minimumDragAmount {
-                                        self.activeItemIndex = self.activeItemIndex + 1
-                                        self.dragged.width = (self.activeItemIndex * (cardWidth + spacing))
+                                    if value.translation.width > self.minimumDragAmount &&
+                                        self.activeItemIndex - 1 >= 0 {   /// Swiping right
+                                        self.activeItemIndex = self.activeItemIndex - 1
+                                        self.dragged.width = -(CGFloat(self.activeItemIndex) * (cardWidth + spacing))
                                         self.accumulated = self.dragged
-//                                        self.setItemOpacity(id: self.activeItemIndex - 1)
                                     }else{
                                         self.dragged = self.accumulated
                                     }
