@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Category: Identifiable, Equatable {
+struct ItemCategory: Identifiable, Equatable, Hashable {
     var id: Int
     var name: String
     

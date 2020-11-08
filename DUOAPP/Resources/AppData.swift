@@ -9,13 +9,17 @@ import Foundation
 
 struct AppData {
     
+    static var userIsreatingOutfit = false;
+    
+    static var selectedItemsForCreatingOutfit: [Item] = []
+    
     static let categories = [
-        Category(id: 1, name: "Headwear"),
-        Category(id: 2, name: "Top"),
-        Category(id: 3, name: "Bottom"),
-        Category(id: 4, name: "Other"),
-        Category(id: 5, name: "Footwear"),
-        Category(id: 6, name: "Accessoires")
+        ItemCategory(id: 1, name: "Headwear"),
+        ItemCategory(id: 2, name: "Top"),
+        ItemCategory(id: 3, name: "Bottom"),
+        ItemCategory(id: 4, name: "Other"),
+        ItemCategory(id: 5, name: "Footwear"),
+        ItemCategory(id: 6, name: "Accessoires")
     ]
     
     static let items = [
@@ -75,8 +79,8 @@ struct AppData {
         ], timesWorn: 0)
     ]
     
-    static func itemsByCategory(category: Category) -> [Item]{
-        return AppData.items.filter{$0.category == category}
+    static func userStartedCreatingOutfit() -> Void{
+        userIsreatingOutfit = true
     }
 }
 

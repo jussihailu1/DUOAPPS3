@@ -21,7 +21,11 @@ struct HomeView: View {
                             .font(.headline)
                     }
                 )
-                Spacer()   
+                Spacer()
+//                Button(action: {AppData.userStartedCreatingOutfit()}, label: {
+//                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+//                })
+                Spacer()
                 NavigationLink(
                     destination: OutfitsView(),
                     label: {

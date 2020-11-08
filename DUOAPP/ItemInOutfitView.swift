@@ -18,7 +18,6 @@ struct ItemInOutfitView: View {
     
     init(item: Item){
         self.item = item
-        
         /// Below values don't matter
         self.cardSize = CGSize(width: 280, height: 280)
         self.itemIndex = 0

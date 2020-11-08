@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D448C392555D3AB006A78AF /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D448C382555D3AB006A78AF /* Outfit.swift */; };
 		8D448C412555E408006A78AF /* ItemInOutfitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D448C402555E408006A78AF /* ItemInOutfitView.swift */; };
+		8D526C2025582F6A001A3377 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D526C1F25582F6A001A3377 /* CarouselView.swift */; };
 		8D646F5225430D2B00E8E135 /* DUOAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */; };
 		8D646F5625430D2D00E8E135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D646F5525430D2D00E8E135 /* Assets.xcassets */; };
 		8D646F5925430D2D00E8E135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D646F5825430D2D00E8E135 /* Preview Assets.xcassets */; };
@@ -17,7 +18,7 @@
 		8D646F812543113100E8E135 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F802543113100E8E135 /* Item.swift */; };
 		8D646F892543113F00E8E135 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F882543113F00E8E135 /* Closet.swift */; };
 		8D646F8E2543115400E8E135 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F8D2543115400E8E135 /* Tag.swift */; };
-		8D646F932543116300E8E135 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F922543116300E8E135 /* Category.swift */; };
+		8D646F932543116300E8E135 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F922543116300E8E135 /* ItemCategory.swift */; };
 		8D646F9B2543413D00E8E135 /* ClosetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646F9A2543413D00E8E135 /* ClosetManager.swift */; };
 		8D646FA12543691700E8E135 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FA02543691700E8E135 /* HomeView.swift */; };
 		8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D646FAB25436A6C00E8E135 /* ClosetView.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		8D448C382555D3AB006A78AF /* Outfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
 		8D448C402555E408006A78AF /* ItemInOutfitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInOutfitView.swift; sourceTree = "<group>"; };
+		8D526C1F25582F6A001A3377 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		8D646F4E25430D2B00E8E135 /* DUOAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUOAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUOAPPApp.swift; sourceTree = "<group>"; };
 		8D646F5525430D2D00E8E135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		8D646F802543113100E8E135 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8D646F882543113F00E8E135 /* Closet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closet.swift; sourceTree = "<group>"; };
 		8D646F8D2543115400E8E135 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		8D646F922543116300E8E135 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8D646F922543116300E8E135 /* ItemCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
 		8D646F9A2543413D00E8E135 /* ClosetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetManager.swift; sourceTree = "<group>"; };
 		8D646FA02543691700E8E135 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8D646FAB25436A6C00E8E135 /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
@@ -134,12 +136,13 @@
 				8DD073FB25443767003C2ABE /* FilterView.swift */,
 				8DAA3C51255499A60081F596 /* ItemInGridView.swift */,
 				8D448C402555E408006A78AF /* ItemInOutfitView.swift */,
+				8DA5D4B025577AFC00C0D886 /* CreateOutfitView.swift */,
+				8D526C1F25582F6A001A3377 /* CarouselView.swift */,
 				8D646F7F254310FA00E8E135 /* Models */,
 				8D646F5125430D2B00E8E135 /* DUOAPPApp.swift */,
 				8D646F5525430D2D00E8E135 /* Assets.xcassets */,
 				8D646F5A25430D2D00E8E135 /* Info.plist */,
 				8D646F5725430D2D00E8E135 /* Preview Content */,
-				8DA5D4B025577AFC00C0D886 /* CreateOutfitView.swift */,
 			);
 			path = DUOAPP;
 			sourceTree = "<group>";
@@ -173,7 +176,7 @@
 		8D646F7F254310FA00E8E135 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D646F922543116300E8E135 /* Category.swift */,
+				8D646F922543116300E8E135 /* ItemCategory.swift */,
 				8D646F882543113F00E8E135 /* Closet.swift */,
 				8D646F802543113100E8E135 /* Item.swift */,
 				8D646F8D2543115400E8E135 /* Tag.swift */,
@@ -324,6 +327,7 @@
 				8D646F892543113F00E8E135 /* Closet.swift in Sources */,
 				8D646FAC25436A6C00E8E135 /* ClosetView.swift in Sources */,
 				8D646F8E2543115400E8E135 /* Tag.swift in Sources */,
+				8D526C2025582F6A001A3377 /* CarouselView.swift in Sources */,
 				8DAA3C52255499A60081F596 /* ItemInGridView.swift in Sources */,
 				8DD073FC25443767003C2ABE /* FilterView.swift in Sources */,
 				8D646F812543113100E8E135 /* Item.swift in Sources */,
@@ -335,7 +339,7 @@
 				8DB92913254AB916005D4527 /* AppData.swift in Sources */,
 				8D646F5225430D2B00E8E135 /* DUOAPPApp.swift in Sources */,
 				8D448C412555E408006A78AF /* ItemInOutfitView.swift in Sources */,
-				8D646F932543116300E8E135 /* Category.swift in Sources */,
+				8D646F932543116300E8E135 /* ItemCategory.swift in Sources */,
 				8D646FB825437A0800E8E135 /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,11 +11,13 @@ struct Item {
     
     var id: Int
     var name: String
-    var category: Category
+    var category: ItemCategory
     var tags: [Tag]
     var image: String
     
-    init(id: Int, name: String, category: Category) {
+    var selected: Bool = false
+    
+    init(id: Int, name: String, category: ItemCategory) {
         self.id = id
         self.name = name
         self.category = category

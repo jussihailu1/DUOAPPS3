@@ -31,7 +31,7 @@ struct OutfitsView: View {
                         .background(Color.gray)
                         .cornerRadius(15)
                 })
-        }.navigationBarTitle("Outfits")
+        }.navigationBarTitle("Outfits", displayMode: .inline)
     }
 }
 

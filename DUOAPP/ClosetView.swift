@@ -8,40 +8,38 @@
 import SwiftUI
 
 struct ClosetView: View {
+    
     var body: some View {
         
-            VStack(spacing: 20 ){
-                Spacer()
-                
-                HStack{
-                    VStack{
-                        ForEach(AppData.categories.prefix(3), id: \.id){ category in
-                            NavigationLink(
-                                destination: FilterView(chosenCategory: category),
-                                label: {
-                                    Text(category.name).frame(width: 150, height: 40)
-                                        .background(Color.gray)
-                                        .foregroundColor(.white)
-                                        .cornerRadius(10).padding()
-                                })
-                        }
-                    }
-                    VStack{
-                        ForEach(AppData.categories.suffix(3), id: \.id){ category in
-                            NavigationLink(
-                                destination: FilterView(chosenCategory: category),
-                                label: {
-                                    Text(category.name).frame(width: 150, height: 40)
-                                        .background(Color.gray)
-                                        .foregroundColor(.white)
-                                        .cornerRadius(10).padding()
-                                })
-                        }
+        VStack(spacing: 20 ){
+            HStack{
+                VStack{
+                    ForEach(AppData.categories.prefix(3), id: \.id){ category in
+                        NavigationLink(
+                            destination: FilterView(chosenCategory: category),
+                            label: {
+                                Text(category.name).frame(width: 150, height: 40)
+                                    .background(Color.gray)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10).padding()
+                            })
                     }
                 }
-                Spacer()
-            }.navigationBarTitle("Closet", displayMode: .inline)
-          
+                VStack{
+                    ForEach(AppData.categories.suffix(3), id: \.id){ category in
+                        NavigationLink(
+                            destination: FilterView(chosenCategory: category),
+                            label: {
+                                Text(category.name).frame(width: 150, height: 40)
+                                    .background(Color.gray)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10).padding()
+                            })
+                    }
+                }
+            }
+        }.navigationBarTitle("Closet", displayMode: .inline)
+        
     }
 }
 
