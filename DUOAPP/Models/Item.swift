@@ -17,14 +17,6 @@ struct Item: Identifiable {
     
     var selected: Bool = false
     
-    init(){
-        self.id = 0
-        self.name = ""
-        self.category = ItemCategory()
-        self.tags = []
-        self.image = ""
-    }
-    
     init(id: Int, name: String, category: ItemCategory) {
         self.id = id
         self.name = name
