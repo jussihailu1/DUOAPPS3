@@ -11,6 +11,7 @@ struct FilterView: View {
     
     let chosenCategory: ItemCategory
     
+    @State var selection: Int? = nil
     @State var selecting: Bool = false
     var filteredItems: [Item] {
         return AppData.items.filter {$0.category == chosenCategory}
@@ -45,17 +46,32 @@ struct FilterView: View {
                 }
             }.padding()
             ScrollView{
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 110))], spacing: 20){
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))], spacing: 20){
                     ForEach(filteredItems, id: \.id){ item in
                         VStack{
-                            if selecting {
-                                ItemInGridView(item: item, selecting: self.selecting)
+                            if AppData.userIsreatingOutfit && !self.selecting{
+                                    NavigationLink(destination: CreateOutfitView(), tag: 1, selection: $selection) {
+                                        Button(action: {
+                                            AppData.selectedItemsForCreatingOutfit.append(item)
+                                            self.selection = 1
+                                        }) {
+                                            ItemInGridView(item: item, selecting: self.selecting)
+                                        }
+                                    }
                             }else{
-                                NavigationLink(
-                                    destination: ItemView(item: item),
-                                    label: {
-                                        ItemInGridView(item: item, selecting: self.selecting)
-                                    })
+                                if selecting {
+                                    NavigationLink(
+                                        destination: CreateOutfitView(),
+                                        label: {
+                                            ItemInGridView(item: item, selecting: self.selecting)
+                                        })
+                                }else{
+                                    NavigationLink(
+                                        destination: ItemView(item: item),
+                                        label: {
+                                            ItemInGridView(item: item, selecting: self.selecting)
+                                        })
+                                }
                             }
                         }
                     }

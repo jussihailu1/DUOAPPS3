@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
+    
+    @State var selection: Int? = nil
+    
+    var body: some View { 
         NavigationView{
             VStack{
                 Spacer()
@@ -21,7 +24,6 @@ struct HomeView: View {
                             .font(.headline)
                     }
                 )
-                Spacer()
                 Spacer()
                 NavigationLink(
                     destination: OutfitsView(),

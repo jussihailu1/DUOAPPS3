@@ -11,7 +11,10 @@ struct ClosetView: View {
     
     var body: some View {
         
-        VStack(spacing: 20 ){
+        VStack(spacing: 60 ){
+            if AppData.userIsreatingOutfit {
+                Text("Selecting items for outfit").padding()
+            }
             HStack{
                 VStack{
                     ForEach(AppData.categories.prefix(3), id: \.id){ category in
@@ -38,8 +41,10 @@ struct ClosetView: View {
                     }
                 }
             }
+            Spacer()
+        }.onAppear{
+            
         }.navigationBarTitle("Closet", displayMode: .inline)
-        
     }
 }
 

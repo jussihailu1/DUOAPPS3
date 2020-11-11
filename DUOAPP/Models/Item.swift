@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item {
+struct Item: Identifiable {
     
     var id: Int
     var name: String
@@ -16,6 +16,14 @@ struct Item {
     var image: String
     
     var selected: Bool = false
+    
+    init(){
+        self.id = 0
+        self.name = ""
+        self.category = ItemCategory()
+        self.tags = []
+        self.image = ""
+    }
     
     init(id: Int, name: String, category: ItemCategory) {
         self.id = id

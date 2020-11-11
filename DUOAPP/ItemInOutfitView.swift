@@ -16,10 +16,11 @@ struct ItemInOutfitView: View {
     var opacity: Double { return itemIndex == activeItemIndex ? 1 : 0.2}
     @State var isActive: Bool = false
     
-    init(item: Item){
+    init(item: Item, cardSize: CGSize){
         self.item = item
-        /// Below values don't matter
-        self.cardSize = CGSize(width: 280, height: 280)
+        self.cardSize = cardSize
+        
+        /// Below value doesn't matter
         self.itemIndex = 0
     }
     
@@ -44,6 +45,6 @@ struct ItemInOutfitView: View {
 
 struct ItemInOutfitView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemInOutfitView(item: AppData.items[20])
+        ItemInOutfitView(item: AppData.items[20], cardSize: CGSize(width: 100, height: 100))
     }
 }
