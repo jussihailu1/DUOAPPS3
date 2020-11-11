@@ -9,7 +9,11 @@ import Foundation
 
 struct AppData {
     
-    static var userIsreatingOutfit = false;
+    public static var userIsreatingOutfit = false;
+    
+    public static func getUserIsCreating() -> Bool {
+        return userIsreatingOutfit
+    }
     
     static var selectedItemsForCreatingOutfit: [Item] = []
     
@@ -64,23 +68,21 @@ struct AppData {
         Item(id: 34, name: "Earrings", category: categories[5])
     ]
     
-    static let outfits = [
-        Outfit(id: 0, name: "Summer fit", items: [
-                items[0], items[3], items[9], items[21], items[29]
-        ], timesWorn: 0),
-        Outfit(id: 1, name: "Summer fit", items: [
-                items[1], items[4], items[10], items[22], items[30]
-        ], timesWorn: 0),
-        Outfit(id: 2, name: "Summer fit", items: [
-                items[2], items[5], items[11], items[23], items[32]
-        ], timesWorn: 0),
-        Outfit(id: 3, name: "Summer fit", items: [
-                items[2], items[20], items[24], items[33]
-        ], timesWorn: 0)
+    static var outfits = [
+        Outfit(id: 0, name: "Summer fit", items: [items[0], items[3], items[9], items[21], items[29]], timesWorn: 0),
+        Outfit(id: 3, name: "Summer fit", items: [items[20], items[24], items[33]], timesWorn: 0),
+        //        Outfit(id: 1, name: "Summer fit", items: [items[1], items[4], items[10], items[22], items[30]], timesWorn: 0),
+        //        Outfit(id: 2, name: "Summer fit", items: [items[2], items[5], items[11], items[23], items[32]], timesWorn: 0)
     ]
     
-    static func userStartedCreatingOutfit() -> Void{
-        userIsreatingOutfit = true
+    static func selectedItemsCategories() -> [ItemCategory] {
+        return Array(Set(AppData.selectedItemsForCreatingOutfit.map{ $0.category })).sorted(by: {$0.id < $1.id})
+    }
+    
+    func saveOutfit() -> Void {
+        AppData.userIsreatingOutfit = false
+        let outfit: Outfit = Outfit(id: AppData.outfits.count + 1, name: "", items: AppData.selectedItemsForCreatingOutfit, timesWorn: 0)
+        AppData.outfits.append(outfit)
     }
 }
 

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
+    
+    @State var selection: Int? = nil
+    
+    var body: some View { 
         NavigationView{
             VStack{
                 Spacer()
@@ -21,10 +24,6 @@ struct HomeView: View {
                             .font(.headline)
                     }
                 )
-                Spacer()
-//                Button(action: {AppData.userStartedCreatingOutfit()}, label: {
-//                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-//                })
                 Spacer()
                 NavigationLink(
                     destination: OutfitsView(),
