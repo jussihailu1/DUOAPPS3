@@ -31,6 +31,7 @@
 		8DBB0BF8255C01DB0068EA2C /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB0BF6255C01DB0068EA2C /* TestModel.xcdatamodeld */; };
 		8DD073FC25443767003C2ABE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD073FB25443767003C2ABE /* FilterView.swift */; };
 		A15EC84E2559BAD300D3E7BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */; };
+		A1D741C1255C1C54009A6A7E /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D741C0255C1C54009A6A7E /* NewItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		8DBB0BF7255C01DB0068EA2C /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 		8DD073FB25443767003C2ABE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A1D741C0255C1C54009A6A7E /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		8D646F5025430D2B00E8E135 /* DUOAPP */ = {
 			isa = PBXGroup;
 			children = (
+				A1D741BF255C1C05009A6A7E /* ViewModel */,
 				A15EC84C2559BA6B00D3E7BE /* Utilities */,
 				8DB928FB254AB6E6005D4527 /* Resources */,
 				8D646FA02543691700E8E135 /* HomeView.swift */,
@@ -206,6 +209,14 @@
 				A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1D741BF255C1C05009A6A7E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1D741C0255C1C54009A6A7E /* NewItemViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				8DAA3C52255499A60081F596 /* ItemInGridView.swift in Sources */,
 				8DD073FC25443767003C2ABE /* FilterView.swift in Sources */,
 				A15EC84E2559BAD300D3E7BE /* ImagePicker.swift in Sources */,
+				A1D741C1255C1C54009A6A7E /* NewItemViewModel.swift in Sources */,
 				8D646F812543113100E8E135 /* Item.swift in Sources */,
 				8D646FC325437E3400E8E135 /* ItemView.swift in Sources */,
 				8DAA3C5725549B2E0081F596 /* OutfitsView.swift in Sources */,
