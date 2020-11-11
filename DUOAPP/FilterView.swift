@@ -19,6 +19,8 @@ struct FilterView: View {
     
     var body: some View {
         VStack(spacing: 30){
+            
+            if AppData.userIsreatingOutfit{
             HStack{
                 Spacer()
                 if selecting {
@@ -39,41 +41,43 @@ struct FilterView: View {
                     })
                 }
             }.padding()
-            ScrollView{
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))], spacing: 20){
-                    ForEach(filteredItems, id: \.id){ item in
-                        VStack{
-                            if AppData.userIsreatingOutfit && !self.selecting{
-                                    NavigationLink(destination: CreateOutfitView(), tag: 1, selection: $selection) {
-                                        Button(action: {
-                                            AppData.selectedItemsForCreatingOutfit.append(item)
-                                            self.selection = 1
-                                        }) {
-                                            ItemInGridView(item: item, selecting: self.selecting)
-                                        }
-                                    }
-                            }else{
-                                if selecting {
-                                    NavigationLink(
-                                        destination: CreateOutfitView(),
-                                        label: {
-                                            ItemInGridView(item: item, selecting: self.selecting)
-                                        })
-                                }else{
-                                    NavigationLink(
-                                        destination: ItemView(item: item),
-                                        label: {
-                                            ItemInGridView(item: item, selecting: self.selecting)
-                                        })
+        }
+        
+        ScrollView{
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))], spacing: 20){
+                ForEach(filteredItems, id: \.id){ item in
+                    VStack{
+                        if AppData.userIsreatingOutfit && !self.selecting{
+                            NavigationLink(destination: CreateOutfitView(), tag: 1, selection: $selection) {
+                                Button(action: {
+                                    AppData.selectedItemsForCreatingOutfit.append(item)
+                                    self.selection = 1
+                                }) {
+                                    ItemInGridView(item: item, selecting: self.selecting)
                                 }
+                            }
+                        }else{
+                            if selecting {
+                                NavigationLink(
+                                    destination: CreateOutfitView(),
+                                    label: {
+                                        ItemInGridView(item: item, selecting: self.selecting)
+                                    })
+                            }else{
+                                NavigationLink(
+                                    destination: ItemView(item: item),
+                                    label: {
+                                        ItemInGridView(item: item, selecting: self.selecting)
+                                    })
                             }
                         }
                     }
                 }
-                
             }
-        }.padding().navigationBarTitle(chosenCategory.name)
-    }
+            
+        }
+    }.padding().navigationBarTitle(chosenCategory.name)
+}
 }
 
 struct FilterView_Previews: PreviewProvider {
