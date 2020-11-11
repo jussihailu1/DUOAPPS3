@@ -12,7 +12,7 @@ struct Item {
     var id: Int
     var name: String
     var category: ItemCategory
-    var tags: [Tag]
+    var tags: [String]
     var image: String
     
     var selected: Bool = false
@@ -23,5 +23,21 @@ struct Item {
         self.category = category
         self.tags = []
         self.image = name + ".png"
+    }
+    
+    init(id: Int, name: String, tags: [String], image: String, category: ItemCategory){
+        self.id  = id
+        self.name = name
+        self.category = category
+        self.tags = tags
+        self.image = image
+    }
+    
+    init(){
+        self.id = 0
+        self.name = ""
+        self.category = ItemCategory()
+        self.tags = []
+        self.image = ""
     }
 }

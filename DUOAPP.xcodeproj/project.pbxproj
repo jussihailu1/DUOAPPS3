@@ -29,6 +29,7 @@
 		8DAA3C5725549B2E0081F596 /* OutfitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA3C5625549B2E0081F596 /* OutfitsView.swift */; };
 		8DB92913254AB916005D4527 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB92912254AB916005D4527 /* AppData.swift */; };
 		8DD073FC25443767003C2ABE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD073FB25443767003C2ABE /* FilterView.swift */; };
+		A15EC84E2559BAD300D3E7BE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8DAA3C5625549B2E0081F596 /* OutfitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitsView.swift; sourceTree = "<group>"; };
 		8DB92912254AB916005D4527 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		8DD073FB25443767003C2ABE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		8D646F5025430D2B00E8E135 /* DUOAPP */ = {
 			isa = PBXGroup;
 			children = (
+				A15EC84C2559BA6B00D3E7BE /* Utilities */,
 				8DB928FB254AB6E6005D4527 /* Resources */,
 				8D646FA02543691700E8E135 /* HomeView.swift */,
 				8D646FAB25436A6C00E8E135 /* ClosetView.swift */,
@@ -192,6 +195,14 @@
 				8DB92912254AB916005D4527 /* AppData.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A15EC84C2559BA6B00D3E7BE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A15EC84D2559BAD300D3E7BE /* ImagePicker.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				8D526C2025582F6A001A3377 /* CarouselView.swift in Sources */,
 				8DAA3C52255499A60081F596 /* ItemInGridView.swift in Sources */,
 				8DD073FC25443767003C2ABE /* FilterView.swift in Sources */,
+				A15EC84E2559BAD300D3E7BE /* ImagePicker.swift in Sources */,
 				8D646F812543113100E8E135 /* Item.swift in Sources */,
 				8D646FC325437E3400E8E135 /* ItemView.swift in Sources */,
 				8DAA3C5725549B2E0081F596 /* OutfitsView.swift in Sources */,
@@ -500,7 +512,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
-				DEVELOPMENT_TEAM = UWTAA8VL2P;
+				DEVELOPMENT_TEAM = RQ685S96RK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DUOAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -508,7 +520,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP20200;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -524,7 +536,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DUOAPP/Preview Content\"";
-				DEVELOPMENT_TEAM = UWTAA8VL2P;
+				DEVELOPMENT_TEAM = RQ685S96RK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DUOAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -532,7 +544,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fhict.DUOAPP20200;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

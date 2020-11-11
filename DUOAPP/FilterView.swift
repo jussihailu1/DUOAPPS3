@@ -20,6 +20,12 @@ struct FilterView: View {
         VStack(spacing: 30){
             HStack{
                 Spacer()
+                NavigationLink(
+                    destination: AddItemView(chosenCategory: chosenCategory),
+                    label: {
+                        Text("Add new " + chosenCategory.name)
+                    })
+                Spacer()
                 if selecting {
                     NavigationLink(
                         destination: CreateOutfitView(),
